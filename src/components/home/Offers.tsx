@@ -3,7 +3,7 @@ import OfferCard from "@/components/ui/OfferCard";
 
 export default function Offers() {
   return (
-    <section className="bg-[#FAF8F4] py-24">
+    <section id="ofertas" className="bg-[#FAF8F4] py-24">
       <div className="mx-auto max-w-7xl px-8">
 
         <div className="mb-14 flex items-end justify-between">
