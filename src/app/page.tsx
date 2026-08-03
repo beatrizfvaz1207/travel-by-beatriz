@@ -5,6 +5,7 @@ import Offers from "@/components/home/Offers";
 import About from "@/components/home/About";
 import QuoteRequest from "@/components/home/QuoteRequest";
 import Testimonials from "@/components/home/Testimonials";
+import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <About />
       <QuoteRequest />
       <Testimonials />
+      <Footer />
     </>
   );
 }
