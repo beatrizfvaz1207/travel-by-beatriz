@@ -46,11 +46,11 @@ export default function Footer() {
               </a>
 
               <a
-                href="mailto:travelbybeatriz@email.com"
+                href="mailto:beatrizfvaz1207@gmail.com"
                 className="flex items-center gap-3 text-white/80 transition hover:text-white"
               >
                 <Mail size={20} />
-                Email
+                beatrizfvaz1207@gmail.com
               </a>
 
             </div>
@@ -64,13 +64,13 @@ export default function Footer() {
             </h4>
 
             <a
-              href="https://instagram.com/"
+              href="https://www.instagram.com/travelbybeatriz/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 text-white/80 transition hover:text-white"
             >
               <span className="text-lg">📷</span>
-Instagram
+@travelbybeatriz
             </a>
 
           </div>
