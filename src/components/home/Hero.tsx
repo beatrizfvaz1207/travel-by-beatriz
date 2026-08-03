@@ -44,24 +44,39 @@ export default function Hero() {
 
           </div>
 
-          <div className="mt-14 flex gap-12">
+         <div className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-3">
 
-            <div>
-              <p className="text-3xl font-bold text-[#204C68]">+500</p>
-              <span className="text-gray-500">Clientes felizes</span>
-            </div>
+  <div>
+    <p className="text-3xl">✨</p>
+    <p className="mt-3 text-xl font-semibold text-[#204C68]">
+      Viagens Personalizadas
+    </p>
+    <span className="text-gray-500">
+      Cada viagem é pensada à tua medida.
+    </span>
+  </div>
 
-            <div>
-              <p className="text-3xl font-bold text-[#204C68]">+40</p>
-              <span className="text-gray-500">Destinos</span>
-            </div>
+  <div>
+    <p className="text-3xl">🤝</p>
+    <p className="mt-3 text-xl font-semibold text-[#204C68]">
+      Acompanhamento Dedicado
+    </p>
+    <span className="text-gray-500">
+      Antes, durante e depois da viagem.
+    </span>
+  </div>
 
-            <div>
-              <p className="text-3xl font-bold text-[#204C68]">5★</p>
-              <span className="text-gray-500">Avaliação</span>
-            </div>
+  <div>
+    <p className="text-3xl">🌍</p>
+    <p className="mt-3 text-xl font-semibold text-[#204C68]">
+      Destinos em Todo o Mundo
+    </p>
+    <span className="text-gray-500">
+      Soluções para qualquer tipo de viagem.
+    </span>
+  </div>
 
-          </div>
+</div>
 
         </div>
 
