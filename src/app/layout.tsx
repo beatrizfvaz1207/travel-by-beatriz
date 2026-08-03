@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Manrope } from "next/font/google";
 import "./globals.css";
 
+import WhatsAppButton from "@/components/ui/WhatsAppButton";
+
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
   variable: "--font-heading",
@@ -30,8 +32,11 @@ export default function RootLayout({
     >
       <body className="min-h-screen bg-[#FAF8F4] text-[#2D2D2D]">
         {children}
+
+        <WhatsAppButton />
       </body>
     </html>
   );
 }
+
 
