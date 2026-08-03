@@ -35,9 +35,12 @@ export default function Hero() {
   Começar a planear a minha viagem
 </a>
 
-            <button className="rounded-full border border-[#204C68] px-8 py-4 font-semibold text-[#204C68] transition hover:bg-[#204C68] hover:text-white">
-              Explorar destinos
-            </button>
+            <a
+  href="#ofertas"
+  className="rounded-full border border-[#204C68] px-8 py-4 font-semibold text-[#204C68] transition hover:bg-[#204C68] hover:text-white"
+>
+  Explorar destinos
+</a>
 
           </div>
 
