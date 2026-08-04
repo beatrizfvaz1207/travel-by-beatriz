@@ -18,41 +18,64 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="bg-[#FAF8F4] py-24">
-      <div className="mx-auto max-w-7xl px-6">
+    <section className="bg-white py-32">
+      <div className="mx-auto max-w-7xl px-8">
 
-        <div className="text-center">
-          <span className="text-sm uppercase tracking-[0.3em] text-[#C9795F]">
-            Testemunhos
-          </span>
+        <div className="mx-auto mb-20 max-w-3xl text-center">
 
-          <h2 className="mt-4 text-5xl font-heading text-[#204C68]">
-            O que dizem os meus clientes
+          <div className="flex items-center justify-center gap-3">
+
+            <div className="h-px w-12 bg-[#C8B27A]" />
+
+            <span className="text-sm uppercase tracking-[0.30em] text-[#C8B27A]">
+              Confiança
+            </span>
+
+            <div className="h-px w-12 bg-[#C8B27A]" />
+
+          </div>
+
+          <h2 className="mt-8 font-heading text-6xl leading-tight text-[#44532F]">
+            Experiências que
+            <br />
+            ficam na memória
           </h2>
+
+          <p className="mt-8 text-lg leading-9 text-[#6D6A63]">
+            Cada viagem é preparada com dedicação para proporcionar uma experiência tranquila do início ao fim.
+          </p>
+
         </div>
 
-        <div className="mt-16 grid gap-8 md:grid-cols-3">
+        <div className="grid gap-10 lg:grid-cols-3">
 
           {testimonials.map((item) => (
-            <div
+            <article
               key={item.name}
-              className="rounded-3xl bg-white p-8 shadow-lg"
+              className="rounded-[20px] border border-[#E5DEC9] bg-[#FDFBF7] p-10 transition duration-300 hover:-translate-y-2 hover:shadow-lg"
             >
-              <p className="text-2xl">⭐⭐⭐⭐⭐</p>
 
-              <p className="mt-6 leading-8 text-gray-600">
+              <p className="text-[#C8B27A] text-xl tracking-wider">
+                ★★★★★
+              </p>
+
+              <p className="mt-8 text-lg leading-9 italic text-[#6D6A63]">
                 "{item.text}"
               </p>
 
-              <p className="mt-8 font-semibold text-[#204C68]">
-                {item.name}
-              </p>
+              <div className="mt-10">
 
-              <p className="text-sm text-gray-500">
-                {item.city}
-              </p>
+                <p className="font-semibold text-[#44532F]">
+                  {item.name}
+                </p>
 
-            </div>
+                <p className="mt-1 text-sm uppercase tracking-[0.15em] text-[#A59A83]">
+                  {item.city}
+                </p>
+
+              </div>
+
+            </article>
           ))}
 
         </div>

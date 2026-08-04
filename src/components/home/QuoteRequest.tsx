@@ -55,27 +55,40 @@ const handleSubmit = (e: React.FormEvent) => {
   window.open(url, "_blank");
 };
   return (
-    <section className="bg-white py-24">
+    <section className="bg-[#F8F5EC] py-32">
 
       <div className="mx-auto max-w-5xl px-6">
 
-        <div className="mb-14 text-center">
+        <div className="mx-auto mb-20 max-w-3xl text-center">
 
-          <p className="text-sm uppercase tracking-[0.3em] text-[#C9795F]">
-            Pedido de Orçamento
-          </p>
+  <div className="flex items-center justify-center gap-3">
 
-          <h2 className="mt-4 font-heading text-5xl text-[#204C68]">
-            Planeia a tua próxima viagem
-          </h2>
+    <div className="h-px w-12 bg-[#C8B27A]" />
 
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600">
-            Conta-me um pouco sobre a viagem que procuras e prepararei uma proposta totalmente personalizada.
-          </p>
+    <span className="text-sm uppercase tracking-[0.30em] text-[#C8B27A]">
+      Pedido de Orçamento
+    </span>
 
-        </div>
+    <div className="h-px w-12 bg-[#C8B27A]" />
 
-        <div className="rounded-[32px] border border-[#E8E2D8] bg-[#FAF8F4] p-8 shadow-xl">
+  </div>
+
+  <h2 className="mt-8 font-heading text-6xl leading-tight text-[#44532F]">
+    Vamos planear
+    <br />
+    a tua próxima viagem
+  </h2>
+
+  <p className="mx-auto mt-8 max-w-2xl text-lg leading-9 text-[#6D6A63]">
+    Conta-me um pouco sobre a viagem que procuras.
+    Prepararei uma proposta totalmente personalizada, sem compromisso.
+  </p>
+
+</div>
+
+        
+
+        <div className="rounded-[36px] border border-[#E5DEC9] bg-white px-12 py-10 shadow-xl">
 
                     <form onSubmit={handleSubmit} className="space-y-8">
                         {/* Dados pessoais */}
@@ -83,7 +96,7 @@ const handleSubmit = (e: React.FormEvent) => {
 <div className="grid gap-6 md:grid-cols-2">
 
   <div>
-    <label className="mb-2 block font-medium text-[#204C68]">
+    <label className="mb-2 block font-medium text-[#44532F]">
       Nome completo
     </label>
 
@@ -92,12 +105,12 @@ const handleSubmit = (e: React.FormEvent) => {
       value={name}
       onChange={(e) => setName(e.target.value)}
       placeholder="Ex.: João Silva"
-      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#204C68]"
+      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#B79C63]"
     />
   </div>
 
   <div>
-    <label className="mb-2 block font-medium text-[#204C68]">
+    <label className="mb-2 block font-medium text-[#44532F]">
       Email
     </label>
 
@@ -106,14 +119,14 @@ const handleSubmit = (e: React.FormEvent) => {
       value={email}
       onChange={(e) => setEmail(e.target.value)}
       placeholder="nome@email.com"
-      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#204C68]"
+      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#44532F]"
     />
   </div>
 
 </div>
 
 <div>
-  <label className="mb-2 block font-medium text-[#204C68]">
+  <label className="mb-2 block font-medium text-[#44532F]">
     Telefone (opcional)
   </label>
 
@@ -122,7 +135,7 @@ const handleSubmit = (e: React.FormEvent) => {
     value={phone}
     onChange={(e) => setPhone(e.target.value)}
     placeholder="+351 912 345 678"
-    className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#204C68]"
+    className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#44532F]"
   />
 </div>
 {/* Viagem */}
@@ -130,7 +143,7 @@ const handleSubmit = (e: React.FormEvent) => {
 <div className="grid gap-6 md:grid-cols-2">
 
   <div>
-    <label className="mb-2 block font-medium text-[#204C68]">
+    <label className="mb-2 block font-medium text-[#44532F]">
       Destino pretendido ou ideia de viagem
     </label>
 
@@ -139,19 +152,19 @@ const handleSubmit = (e: React.FormEvent) => {
       value={destination}
       onChange={(e) => setDestination(e.target.value)}
       placeholder="Ex.: Maldivas, Japão, Praia ou Aceito sugestões"
-      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#204C68]"
+      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#44532F]"
     />
   </div>
 
   <div>
-    <label className="mb-2 block font-medium text-[#204C68]">
+    <label className="mb-2 block font-medium text-[#44532F]">
       Tipo de viagem
     </label>
 
     <select
       value={travelType}
       onChange={(e) => setTravelType(e.target.value)}
-      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#204C68]"
+      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#44532F]"
     >
       <option value="">Seleciona...</option>
       <option>Praia</option>
@@ -171,7 +184,7 @@ const handleSubmit = (e: React.FormEvent) => {
 <div className="grid gap-6 md:grid-cols-2">
 
   <div>
-    <label className="mb-2 block font-medium text-[#204C68]">
+    <label className="mb-2 block font-medium text-[#44532F]">
       Quando pretendes viajar?
     </label>
 
@@ -180,19 +193,19 @@ const handleSubmit = (e: React.FormEvent) => {
       value={dates}
       onChange={(e) => setDates(e.target.value)}
       placeholder="Ex.: Agosto 2027"
-      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#204C68]"
+      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#44532F]"
     />
   </div>
 
   <div>
-    <label className="mb-2 block font-medium text-[#204C68]">
+    <label className="mb-2 block font-medium text-[#44532F]">
       Flexibilidade das datas
     </label>
 
     <select
       value={flexibility}
       onChange={(e) => setFlexibility(e.target.value)}
-      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#204C68]"
+      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#44532F]"
     >
       <option value="">Seleciona...</option>
       <option>Datas fixas</option>
@@ -207,7 +220,7 @@ const handleSubmit = (e: React.FormEvent) => {
 <div className="grid gap-6 md:grid-cols-3">
 
   <div>
-    <label className="mb-2 block font-medium text-[#204C68]">
+    <label className="mb-2 block font-medium text-[#44532F]">
       Adultos
     </label>
 
@@ -216,12 +229,12 @@ const handleSubmit = (e: React.FormEvent) => {
       min="1"
       value={adults}
       onChange={(e) => setAdults(e.target.value)}
-      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#204C68]"
+      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#44532F]"
     />
   </div>
 
   <div>
-    <label className="mb-2 block font-medium text-[#204C68]">
+    <label className="mb-2 block font-medium text-[#44532F]">
       Crianças
     </label>
 
@@ -230,12 +243,12 @@ const handleSubmit = (e: React.FormEvent) => {
       min="0"
       value={children}
       onChange={(e) => setChildren(e.target.value)}
-      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#204C68]"
+      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#44532F]"
     />
   </div>
 
   <div>
-    <label className="mb-2 block font-medium text-[#204C68]">
+    <label className="mb-2 block font-medium text-[#44532F]">
       Idade das crianças
     </label>
 
@@ -244,7 +257,7 @@ const handleSubmit = (e: React.FormEvent) => {
       value={childrenAges}
       onChange={(e) => setChildrenAges(e.target.value)}
       placeholder="Ex.: 4 e 8 anos"
-      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#204C68]"
+      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#44532F]"
     />
   </div>
 
@@ -255,14 +268,14 @@ const handleSubmit = (e: React.FormEvent) => {
 <div className="grid gap-6 md:grid-cols-2">
 
   <div>
-    <label className="mb-2 block font-medium text-[#204C68]">
+    <label className="mb-2 block font-medium text-[#44532F]">
       Aeroporto de partida
     </label>
 
     <select
       value={airport}
       onChange={(e) => setAirport(e.target.value)}
-      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#204C68]"
+      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#44532F]"
     >
       <option value="">Seleciona...</option>
 
@@ -283,7 +296,7 @@ const handleSubmit = (e: React.FormEvent) => {
 
     <div>
 
-      <label className="mb-2 block font-medium text-[#204C68]">
+      <label className="mb-2 block font-medium text-[#44532F]">
         Qual é o aeroporto?
       </label>
 
@@ -292,7 +305,7 @@ const handleSubmit = (e: React.FormEvent) => {
         value={otherAirport}
         onChange={(e) => setOtherAirport(e.target.value)}
         placeholder="Ex.: Londres Heathrow"
-        className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#204C68]"
+        className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#44532F]"
       />
 
     </div>
@@ -305,14 +318,14 @@ const handleSubmit = (e: React.FormEvent) => {
 <div className="grid gap-6 md:grid-cols-2">
 
   <div>
-    <label className="mb-2 block font-medium text-[#204C68]">
+    <label className="mb-2 block font-medium text-[#44532F]">
       Tipo de alojamento
     </label>
 
     <select
       value={accommodation}
       onChange={(e) => setAccommodation(e.target.value)}
-      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#204C68]"
+      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#44532F]"
     >
       <option value="">Seleciona...</option>
 
@@ -327,14 +340,14 @@ const handleSubmit = (e: React.FormEvent) => {
   </div>
 
   <div>
-    <label className="mb-2 block font-medium text-[#204C68]">
+    <label className="mb-2 block font-medium text-[#44532F]">
       Regime
     </label>
 
     <select
       value={board}
       onChange={(e) => setBoard(e.target.value)}
-      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#204C68]"
+      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#44532F]"
     >
       <option value="">Seleciona...</option>
 
@@ -355,14 +368,14 @@ const handleSubmit = (e: React.FormEvent) => {
 <div className="grid gap-6 md:grid-cols-2">
 
   <div>
-    <label className="mb-2 block font-medium text-[#204C68]">
+    <label className="mb-2 block font-medium text-[#44532F]">
       Orçamento aproximado
     </label>
 
     <select
       value={budget}
       onChange={(e) => setBudget(e.target.value)}
-      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#204C68]"
+      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#44532F]"
     >
       <option value="">Seleciona...</option>
 
@@ -377,14 +390,14 @@ const handleSubmit = (e: React.FormEvent) => {
   </div>
 
   <div>
-    <label className="mb-2 block font-medium text-[#204C68]">
+    <label className="mb-2 block font-medium text-[#44532F]">
       Motivo da viagem
     </label>
 
     <select
       value={purpose}
       onChange={(e) => setPurpose(e.target.value)}
-      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#204C68]"
+      className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#44532F]"
     >
       <option value="">Seleciona...</option>
 
@@ -405,7 +418,7 @@ const handleSubmit = (e: React.FormEvent) => {
 
 <div>
 
-  <label className="mb-2 block font-medium text-[#204C68]">
+  <label className="mb-2 block font-medium text-[#44532F]">
     Observações
   </label>
 
@@ -414,14 +427,14 @@ const handleSubmit = (e: React.FormEvent) => {
     value={notes}
     onChange={(e) => setNotes(e.target.value)}
     placeholder="Conta-me um pouco mais sobre a viagem que procuras..."
-    className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#204C68]"
+    className="w-full rounded-xl border border-[#E8E2D8] bg-white px-4 py-3 outline-none transition focus:border-[#44532F]"
   />
 
 </div>
 
 <button
   type="submit"
-  className="w-full rounded-full bg-[#204C68] py-4 text-lg font-semibold text-white transition hover:bg-[#18394F]"
+  className="w-full rounded-full bg-[#44532F] py-4 text-lg font-medium text-white transition duration-300 hover:bg-[#394528]"
 >
   Pedir o meu orçamento personalizado
 </button>

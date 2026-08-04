@@ -3,26 +3,39 @@ import OfferCard from "@/components/ui/OfferCard";
 
 export default function Offers() {
   return (
-    <section id="ofertas" className="bg-[#FAF8F4] py-24">
+    <section
+      id="ofertas"
+      className="bg-[#F8F5EC] py-32"
+    >
       <div className="mx-auto max-w-7xl px-8">
 
-        <div className="mb-14 flex items-end justify-between">
-          <div>
-            <p className="text-sm uppercase tracking-[0.3em] text-[#C9795F]">
-              Ofertas em Destaque
-            </p>
+        <div className="mb-20 max-w-3xl">
 
-            <h2 className="mt-3 text-5xl font-heading text-[#204C68]">
-              Inspira-te para a próxima viagem
-            </h2>
+          <div className="flex items-center gap-3">
+
+            <div className="h-px w-12 bg-[#C8B27A]" />
+
+            <span className="text-sm uppercase tracking-[0.28em] text-[#C8B27A]">
+              Destinos Selecionados
+            </span>
+
           </div>
 
-          <button className="rounded-full border border-[#204C68] px-6 py-3 text-[#204C68] transition hover:bg-[#204C68] hover:text-white">
-            Ver todas
-          </button>
+          <h2 className="mt-8 font-heading text-6xl leading-tight text-[#44532F]">
+            Inspira-te para
+            <br />
+            a tua próxima viagem
+          </h2>
+
+          <p className="mt-8 max-w-2xl text-lg leading-9 text-[#6D6A63]">
+            Cada proposta foi escolhida para proporcionar experiências
+            memoráveis, com acompanhamento personalizado do início ao fim.
+          </p>
+
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+
           {offers.map((offer) => (
             <OfferCard
               key={offer.id}
@@ -36,11 +49,14 @@ export default function Offers() {
               price={offer.price}
             />
           ))}
+
         </div>
 
       </div>
     </section>
   );
 }
+
+
 
 
