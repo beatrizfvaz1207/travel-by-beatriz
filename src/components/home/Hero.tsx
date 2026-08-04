@@ -3,112 +3,108 @@ import { heroMessage } from "@/lib/whatsapp";
 
 export default function Hero() {
   return (
-    <section className="bg-[#FAF8F4] pt-40 pb-24">
-      <div className="mx-auto grid max-w-7xl items-center gap-16 px-8 lg:grid-cols-2">
+    <section className="bg-[#F8F5EC] pt-44 pb-32">
+      <div className="mx-auto grid max-w-7xl items-center gap-20 px-8 lg:grid-cols-2">
 
         {/* Texto */}
         <div>
 
-          <span className="rounded-full bg-[#204C68]/10 px-4 py-2 text-sm font-semibold text-[#204C68]">
-            ✈️ Viagens personalizadas
-          </span>
+          <div className="flex items-center gap-3">
+            <div className="h-px w-12 bg-[#C8B27A]" />
 
-          <h1 className="mt-8 text-6xl leading-tight text-[#204C68] font-heading">
+            <span className="text-sm uppercase tracking-[0.28em] text-[#C8B27A]">
+              Consultoria de Viagens
+            </span>
+          </div>
+
+          <h1 className="mt-8 font-heading text-6xl leading-[1.08] text-[#44532F] lg:text-7xl">
             Cada viagem merece
             <br />
             ser inesquecível.
           </h1>
 
-          <p className="mt-8 max-w-xl text-lg leading-8 text-gray-600">
+          <p className="mt-8 max-w-xl text-lg leading-9 text-[#6D6A63]">
             Descobre destinos cuidadosamente selecionados e conta com
-            acompanhamento personalizado antes, durante e depois da tua viagem.
+            acompanhamento personalizado antes, durante e depois da tua
+            viagem.
           </p>
 
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-12 flex flex-wrap gap-4">
 
             <a
-  href={heroMessage()}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="rounded-full bg-[#204C68] px-8 py-4 font-semibold text-white transition hover:bg-[#18394F]"
->
-  Começar a planear a minha viagem
-</a>
+              href={heroMessage()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-[#44532F] px-9 py-4 font-medium text-white shadow-lg transition hover:bg-[#394528]"
+            >
+              Começar a planear
+            </a>
 
             <a
-  href="#ofertas"
-  className="rounded-full border border-[#204C68] px-8 py-4 font-semibold text-[#204C68] transition hover:bg-[#204C68] hover:text-white"
->
-  Explorar destinos
-</a>
+              href="#ofertas"
+              className="rounded-full border border-[#44532F] px-9 py-4 font-medium text-[#44532F] transition hover:bg-[#44532F] hover:text-white"
+            >
+              Explorar destinos
+            </a>
 
           </div>
 
-         <div className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-3">
+          <div className="mt-16 grid gap-10 sm:grid-cols-3">
 
-  <div>
-    <p className="text-3xl">✨</p>
-    <p className="mt-3 text-xl font-semibold text-[#204C68]">
-      Viagens Personalizadas
-    </p>
-    <span className="text-gray-500">
-      Cada viagem é pensada à tua medida.
-    </span>
-  </div>
+            <div>
+              <p className="text-3xl">✨</p>
 
-  <div>
-    <p className="text-3xl">🤝</p>
-    <p className="mt-3 text-xl font-semibold text-[#204C68]">
-      Acompanhamento Dedicado
-    </p>
-    <span className="text-gray-500">
-      Antes, durante e depois da viagem.
-    </span>
-  </div>
+              <h3 className="mt-4 text-xl font-semibold text-[#44532F]">
+                Personalizado
+              </h3>
 
-  <div>
-    <p className="text-3xl">🌍</p>
-    <p className="mt-3 text-xl font-semibold text-[#204C68]">
-      Destinos em Todo o Mundo
-    </p>
-    <span className="text-gray-500">
-      Soluções para qualquer tipo de viagem.
-    </span>
-  </div>
+              <p className="mt-2 text-[#7A766E] leading-7">
+                Cada viagem é pensada exclusivamente para ti.
+              </p>
+            </div>
 
-</div>
+            <div>
+              <p className="text-3xl">🤝</p>
+
+              <h3 className="mt-4 text-xl font-semibold text-[#44532F]">
+                Acompanhamento
+              </h3>
+
+              <p className="mt-2 text-[#7A766E] leading-7">
+                Antes, durante e depois da tua viagem.
+              </p>
+            </div>
+
+            <div>
+              <p className="text-3xl">🌍</p>
+
+              <h3 className="mt-4 text-xl font-semibold text-[#44532F]">
+                Destinos
+              </h3>
+
+              <p className="mt-2 text-[#7A766E] leading-7">
+                Soluções para qualquer tipo de experiência.
+              </p>
+            </div>
+
+          </div>
 
         </div>
 
         {/* Imagem */}
-        <div className="relative">
 
-          <div className="overflow-hidden rounded-[36px] shadow-2xl">
+        <div>
+
+          <div className="overflow-hidden rounded-[24px] shadow-xl">
 
             <Image
               src="/images/hero.jpg"
-              alt="Praia paradisíaca"
+              alt="Travel by Beatriz"
               width={700}
               height={850}
-              className="h-[700px] w-full object-cover"
               priority
+              className="h-[720px] w-full object-cover"
             />
-
-          </div>
-
-          <div className="absolute -bottom-8 -left-8 rounded-3xl bg-white p-6 shadow-xl">
-
-            <p className="text-sm uppercase tracking-widest text-[#C9795F]">
-              Travel by Beatriz
-            </p>
-
-            <p className="mt-2 text-xl font-semibold text-[#204C68]">
-              Acompanhamento personalizado
-            </p>
-
-            <p className="mt-2 text-gray-600">
-              Antes, durante e depois da viagem.
-            </p>
 
           </div>
 
@@ -118,4 +114,5 @@ export default function Hero() {
     </section>
   );
 }
+
 
