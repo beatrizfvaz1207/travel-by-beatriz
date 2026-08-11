@@ -44,7 +44,6 @@ export default function Hero() {
               href="#ofertas"
               className="rounded-full border border-[#44532F] px-9 py-4 font-medium text-[#44532F] transition hover:bg-[#44532F] hover:text-white"
             >
-              Explorar destinos
             </a>
 
           </div>
