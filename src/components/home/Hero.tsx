@@ -14,7 +14,7 @@ export default function Hero() {
 
             <span className="text-sm uppercase tracking-[0.28em] text-[#C8B27A]">
               Consultoria de Viagens
-            </span>git add .
+            </span>
           </div>
 
           <h1 className="mt-8 font-heading text-6xl leading-[1.08] text-[#44532F] lg:text-7xl">
