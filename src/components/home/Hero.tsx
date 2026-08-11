@@ -14,7 +14,7 @@ export default function Hero() {
 
             <span className="text-sm uppercase tracking-[0.28em] text-[#C8B27A]">
               Consultoria de Viagens
-            </span>
+            </span>git add .
           </div>
 
           <h1 className="mt-8 font-heading text-6xl leading-[1.08] text-[#44532F] lg:text-7xl">
@@ -38,12 +38,6 @@ export default function Hero() {
               className="rounded-full bg-[#44532F] px-9 py-4 font-medium text-white shadow-lg transition hover:bg-[#394528]"
             >
               Começar a planear
-            </a>
-
-            <a
-              href="#ofertas"
-              className="rounded-full border border-[#44532F] px-9 py-4 font-medium text-[#44532F] transition hover:bg-[#44532F] hover:text-white"
-            >
             </a>
 
           </div>
