@@ -15,7 +15,6 @@ export default function Navbar() {
         {/* Logo */}
 
         <Link href="/" className="leading-tight">
-
           <h1 className="font-heading text-4xl text-[#44532F]">
             Travel by Beatriz
           </h1>
@@ -23,7 +22,6 @@ export default function Navbar() {
           <p className="mt-1 text-[11px] uppercase tracking-[0.35em] text-[#B79C63]">
             Consultora de Viagens
           </p>
-
         </Link>
 
         {/* Menu */}
@@ -31,10 +29,6 @@ export default function Navbar() {
         <nav className="hidden items-center gap-10 text-sm uppercase tracking-[0.18em] text-[#4A4A4A] md:flex">
 
           <a href="#">Início</a>
-
-          <a href="#ofertas">Destinos</a>
-
-          <a href="#ofertas">Ofertas</a>
 
           <a href="#sobre">Sobre</a>
 
@@ -72,4 +66,5 @@ export default function Navbar() {
     </header>
   );
 }
+
 
